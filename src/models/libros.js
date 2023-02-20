@@ -2,13 +2,19 @@ import db from "../db/database";
 import DataType from "sequelize";
 
 const Libro = db.define("libros", {
-    titulo: {
+    title: {
         type: DataType.STRING,
     },
-    autor: {
+    authors: {
         type: DataType.STRING,
     },
-    isbn: {
+    average_rating: {
+        type: DataType.STRING,
+    },
+    language_code: {
+        type: DataType.STRING,
+    },
+    num_pages: {
         type: DataType.STRING,
     },
 });
