@@ -15,10 +15,10 @@ En el archivo config.json se encuentra la configuración de la base de datos, en
 * ### GET /api/libros/libros [http://localhost:4000/api/libros/libros](http://localhost:4000/api/libros/libros)
     Obtiene todos los libros de la base de datos y los muestra en formato JSON
     ![Obtener todos los libros](imagenes_prueba/get_libros.jpg "Obtener todos los libros")
-* ### GET /api/libros/libro/:id
+* ### GET /api/libros/libro/:id [http://localhost:4000/api/libros/libro/1](http://localhost:4000/api/libros/libro/300)
     Obtiene un libro de la base de datos y lo muestra en formato JSON
     ![Obtener un libro](imagenes_prueba/get_libro.jpg "Obtener un libro")
-* ### POST /api/libros/libros
+* ### POST /api/libros/libros [http://localhost:4000/api/libros/libros](http://localhost:4000/api/libros/libros)
     Crea un nuevo libro en la base de datos y lo muestra en formato JSON
     ![Crear un libro](imagenes_prueba/create_libro.jpg "Crear un libro")
     ![Crear un libro en db](imagenes_prueba/libro_creado_db.jpg "Crear un libro")
@@ -34,7 +34,7 @@ En el archivo config.json se encuentra la configuración de la base de datos, en
     ```
     Si se envía un JSON con datos incorrectos, se mostrará un mensaje de error
     ![Error al crear un libro](imagenes_prueba/tried_create_libro.jpg "Error al crear un libro")
-* ### PUT /api/libros/libro/:id
+* ### PUT /api/libros/libro/:id [http://localhost:4000/api/libros/libro/1](http://localhost:4000/api/libros/libro/30906)
     Actualiza un libro de la base de datos y si se actualiza correctamente muestra un mensaje de éxito
     ![Actualizar un libro](imagenes_prueba/update_libro.jpg "Actualizar un libro")
     ![Actualizar un libro en db](imagenes_prueba/upd_libro_db.jpg "Actualizar un libro")
@@ -48,7 +48,7 @@ En el archivo config.json se encuentra la configuración de la base de datos, en
         "num_pages" : "El número de páginas"
     }
     ```
-* ### DELETE /api/libros/libro/:id
+* ### DELETE /api/libros/libro/:id [http://localhost:4000/api/libros/libro/1](http://localhost:4000/api/libros/libro/30906)
     Elimina un libro de la base de datos y si se elimina correctamente muestra un mensaje de éxito
     ![Eliminar un libro](imagenes_prueba/delete_libro_db.jpg "Eliminar un libro")
     ![Eliminar un libro en db](imagenes_prueba/delete_libro_dbb.jpg "Eliminar un libro")
